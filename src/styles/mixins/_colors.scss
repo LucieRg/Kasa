@@ -1,0 +1,8 @@
+@mixin color($color-name, $color-value) {
+    .#{$color-name} {
+      --#{$color-name}: #{$color-value};
+    }
+  }
+
+$primary-color: #FF6060;
+$background-color: #f6f6f6;
