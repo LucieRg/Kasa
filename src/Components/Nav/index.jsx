@@ -1,11 +1,11 @@
 import "../../styles/nav.scss"
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Nav() {
   return (
     <nav className='nav'>
-    <Link to="/Kasa"> Accueil</Link>
-     <Link to="/about">À propos</Link>
+    <NavLink to="/Kasa"> Accueil</NavLink>
+     <NavLink to="/about">À propos</NavLink>
     </nav>
   )
 }

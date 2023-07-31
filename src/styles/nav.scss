@@ -1,42 +1,45 @@
-@import '../styles/mixins/colors';
+@import "../styles/mixins/colors";
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 57px;
-    width: 309px;
-    font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 57px;
+  width: 309px;
+  font-size: 24px;
 
-    @media (max-width: 900px) {
-        gap: 26px;
+  @media (max-width: 900px) {
+    gap: 26px;
+  }
+
+  @media (max-width: 350px) {
+    gap: 20px;
+  }
+
+  a {
+    color: $primary-color;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: right;
+    &:hover {
+      text-decoration: underline;
     }
-    
-    @media (max-width: 350px) {
-        gap: 20px;
+    &.active {
+      text-decoration: underline;
     }
+  }
 
-        a {
-            color: $primary-color;
-            font-size: 24px;
-            font-weight: 500;
-            text-decoration: none;
-            text-align: right;
-                &:hover {
-                    text-decoration: underline;
-                }
-        }
+  @media (max-width: 900px) {
+    a {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
 
-        @media (max-width: 900px) {
-            a {
-              font-size: 12px;
-              text-transform: uppercase;
-            }
-          }
-
-        @media (max-width: 350px) {
-            a {
-              font-size: 10px;
-              text-transform: uppercase;
-            }
-          } 
+  @media (max-width: 350px) {
+    a {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+  }
 }
